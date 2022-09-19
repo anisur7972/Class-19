@@ -1,0 +1,398 @@
+/* ######### Comon Css Start ########  */
+body,h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ######### Header Css Start Here ######## */
+.active-color{
+    color: #c6914c !important;
+}
+header {
+    background-image: url(img/ia_200000019.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo img {
+    width: 210px;
+    margin-top: 6px;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+/* ######### Main Menu Start Here ######## */
+nav ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .4s ease;
+}
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 4%;
+    position: absolute;
+    top: 80%;
+    left: 15px;
+    background-color: #c6914c;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+}
+nav ul li a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 80%;
+}
+nav ul li a:hover{
+    color: #c6914c;
+}
+
+/* ######### Main Menu End  ######## */
+
+/* ######### Page Dropdown Start  ######## */
+.main-menu li{
+    position: relative;
+}
+.page-dropdown{
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all .4s ease;
+}
+.main-menu li:hover .page-dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.page-dropdown li{
+    display: block;
+}
+.page-dropdown li a {
+    display: block;
+    color: #000;
+    padding: 0;
+    text-align: center;
+    line-height: 53px;
+    position: relative;
+    transition: all .4s ease;
+}
+.page-dropdown li a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    
+}
+.page-dropdown li a:hover{
+    background-color: #c4c0c2;
+    color: #c6914c;
+}
+/* ######### Page Dropdown End  ######## */
+
+/* ######### Blog Dropdown Start  ######## */
+.blog-dropdown{
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all .4s ease;
+}
+.main-menu li:hover .blog-dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.blog-dropdown li{
+    display: block;
+}
+.blog-dropdown li a{
+    display: block;
+    color: #000;
+    padding: 0;
+    text-align: center;
+    line-height: 53px;
+    position: relative;
+    transition: all .4s ease;
+}
+.blog-dropdown li a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    
+}
+.blog-dropdown li a:hover{
+    background-color: #c4c0c2;
+    color: #c6914c;
+}
+/* ######### Blog Dropdown End  ######## */
+
+/* #### contact-layout-dropdown Start  ######## */
+.contact-layout-dropdown{
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all .4s ease;
+}
+.main-menu li:hover .contact-layout-dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.contact-layout-dropdown li{
+    display: block;
+}
+.contact-layout-dropdown li a{
+    display: block;
+    color: #000;
+    padding: 0;
+    text-align: center;
+    line-height: 53px;
+    position: relative;
+    transition: all .4s ease;
+}
+
+.contact-layout-dropdown li a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    
+}
+.contact-layout-dropdown li a:hover{
+    background-color: #c4c0c2;
+    color: #c6914c;
+}
+/* #### contact-layout-dropdown End  ######## */
+/* ####### Banner Caption Css Start #######  */
+.banner-caption{
+    padding: 200px 0;
+}
+.banner-caption {
+    margin-top: 120px;
+}
+.banner-caption h1 {
+    font-size: 79px;
+    font-weight: 600;
+}
+.banner-caption p {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 30px 0 30px;
+    position: relative;
+    font-weight: 600;
+}
+.banner-caption p::before {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 17px;
+    left: 347px;
+}
+.banner-caption p::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 17px;
+    right: 353px;
+}
+.banner-caption a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #c69453;
+    padding: 12px 30px;
+    border-radius: 20px;
+    transition: all .4s ease;
+}
+.banner-caption a:hover{
+    background-color: #fff;
+    color: #c69453;
+}
+/* ####### Banner Caption Css End #######  */
+/* ####### Header Css End Here ####### */
+
+/* ####### Service Section Css Start ####### */
+.service-section{
+    background-color: #f8f8f8;
+    padding: 70px 0 70px;
+}
+.service-box{
+    background-color: #fff;
+    padding: 10px;
+    transition: all .4s ease;
+}
+.rotted-img img{
+    transition:  all .4s ease;
+}
+.service-box h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 25px 0 16px;
+}
+.service-box p{
+    margin: 20px 0 20px;
+    line-height: 23px;
+    color: #595a5b;
+}
+.s-button a {
+    background-color: #c69453;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: all .4s ease;
+    color: #fff;
+    text-decoration: none;
+}
+.service-box:hover{
+    background-color: #e2e1e3;
+}
+.service-box:hover .rotted-img img{
+    transform: rotateY(360deg);
+    
+}
+.service-box:hover .s-button a{
+    background-color: #fff;
+    color: #c69453;
+}
+.s-button a:hover{
+    transform: translateY(10px);
+    background-color: #000 !important;
+    color: #fff !important;
+}
+/* ####### Service Section Css End ####### */
+
+/* ####### About Section Css Start ####### */
+.about-section {
+    background-color: #f8f8f8;
+    padding: 100px 0  20px;
+}
+.a-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    margin-top: 25px;
+}
+/* ####### About Section Css End ####### */
+
+/* ####### Contact Section Css Start ####### */
+.contact-section{
+    background-color:#f8f8f8 ;
+}
+.contact-top {
+    margin-top: 100px;
+}
+.contact-top p {
+    margin: 15px 0 20px;
+    font-size: 15px;
+}
+.contact-top h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 28px;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    transition: all .4s ease;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+input:focus{
+    border: 2px solid #000;
+}
+.submit-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #c69453;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    margin-bottom: 100px;
+}
+.contact-right-img {
+    background-image: url(img/ia_200000022.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    padding: 355px 239px;
+}
+/* ####### Contact Section Css End ####### */
+
+
+/* ####### Footer Section Css Start ####### */
+
+footer{
+    background-color: #6d6d6d;
+    color: #fff;
+
+}
+footer p {
+    margin-bottom: 0;
+    line-height: 60px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.social-link{
+    margin-bottom: 0;
+    list-style-type: none;
+    text-align: right;
+}
+.social-link li{
+    display: inline-block;
+}
+.social-link li a {
+    display: inline-block;
+    color: #fff;
+    padding: 0 10px;
+    line-height: 60px;
+}
+/* ####### Footer Section Css End ####### */
+
